@@ -2,6 +2,7 @@
 
 - Студент: [Семён Бондарев](https://up.htmlacademy.ru/htmlcss-individual/3/user/467107).
 - Наставник: [Александр Козюков](https://htmlacademy.ru/profile/id1119885).
+- Сайт: [Мой проект Седона](https://svbond.github.io/sedona-3/).
 
 ---
 
