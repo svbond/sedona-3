@@ -1,14 +1,19 @@
 <!doctype html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="header-nav">
         <a class="logo" href="index.html">
-          <img src="#" alt="Седона">
+          <img
+            src="./images/svg/logo.svg"
+            width="140px"
+            height="70.05px"
+            alt="Седона"
+          >
         </a>
 
         <ul class="site-menu">
@@ -36,7 +41,13 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main" data-test="main">
+      <img
+        src="./images/background/filter.jpg"
+        width="1200px"
+        height="476px"
+        alt="Гостиницы Седоны"
+      >
       <h1 class="page-main-header">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
@@ -49,7 +60,7 @@
         </li>
       </ul>
 
-      <section class="filter">
+      <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Фильтр списка гостиниц</h2>
 
         <form
@@ -190,7 +201,7 @@
         </form>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <p class="section-title">Найдено гостиниц: <span class="hotels-quantity">38</span></p>
 
@@ -224,7 +235,13 @@
           <ul class="hotels-card">
             <li class="card-item">
               <article class="card">
-                <img class="card-img" src="#" alt="">
+                <img
+                  class="card-img"
+                  src="./images/hotels/hotel-amara.jpg"
+                  width="300px"
+                  height="212px"
+                  alt="Гостиница Amara Resort and Spa"
+                >
                 <h4 class="card-title">
                   <a class="card-link" href="#"> Amara Resort & Spa </a>
                 </h4>
@@ -242,7 +259,13 @@
             </li>
             <li class="card-item">
               <article class="card">
-                <img class="card-img" src="#" alt="">
+                <img
+                  class="card-img"
+                  src="./images/hotels/hotel-villas.jpg"
+                  width="300px"
+                  height="212px"
+                  alt="Гостиница Villas at Poco Diablo"
+                >
                 <h4 class="card-title">
                   <a class="card-link" href="#"> Villas at Poco Diablo </a>
                 </h4>
@@ -260,7 +283,13 @@
             </li>
             <li class="card-item">
               <article class="card">
-                <img class="card-img" src="#" alt="">
+                <img
+                  class="card-img"
+                  src="./images/hotels/hotel-desert.jpg"
+                  width="300px"
+                  height="212px"
+                  alt="Гостиница Desert Quail Inn"
+                >
                 <h4 class="card-title">
                   <a class="card-link" href="#"> Desert Quail Inn </a>
                 </h4>
@@ -278,7 +307,13 @@
             </li>
             <li class="card-item">
               <article class="card">
-                <img class="card-img" src="#" alt="">
+                <img
+                  class="card-img"
+                  src="./images/hotels/hotel-greentree.jpg"
+                  width="300px"
+                  height="212px"
+                  alt="Гостиница GreenTree Inn"
+                >
                 <h4 class="card-title">
                   <a class="card-link" href="#"> GreenTree Inn </a>
                 </h4>
@@ -296,7 +331,7 @@
             </li>
           </ul>
 
-          <div class="pagination">
+        <div class="pagination">
           <h3 class="visually-hidden">Список страниц</h3>
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-active">
@@ -319,7 +354,14 @@
             </li>
           </ul>
         </div>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
+        <img
+          class="subscribe-img visually-hidden"
+          src="./images/background/subscribe.jpg"
+          width="1200px"
+          height="414.86px"
+          alt="Подпишитесь на рассылку"
+        >
         <h2 class="section-title">Подпишитесь на рассылку</h2>
         <p class="section-description">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -346,29 +388,55 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="page-footer-social social">
         <li class="social-item">
           <a class="social-link" href="https://vk.ru/htmlacademy">
             <span class="visually-hidden">VK</span>
+            <img
+              src="./images/svg/vk.svg"
+              width="24px"
+              height="14px"
+              alt="ВКонтакте"
+            >
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
+            <img
+              src="./images/svg/telegram.svg"
+              width="24px"
+              height="14px"
+              alt="Телеграм"
+            >
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/@HTMLAcademyTV">
             <span class="visually-hidden">YouTube</span>
+            <img
+              src="./images/svg/youtube.svg"
+              width="24px"
+              height="14px"
+              alt="YouTube"
+            >
           </a>
         </li>
       </ul>
 
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-      <a class="footer-developer" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="#" alt="Разработано в HTML Academy">
+      <a
+        class="footer-developer"
+        href="https://htmlacademy.ru/intensive/htmlcss"
+      >
+        <img
+          src="./images/svg/html-academy.svg"
+          width="114.9px"
+          height="32.9px"
+          alt="Разработано в HTML Academy"
+        >
       </a>
     </footer>
   </body>
